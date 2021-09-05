@@ -1,1 +1,20 @@
-<h1>New Hits</h1>
+{% extends "spy_agency/base.html" %}
+{% load static %}
+
+{% block content %}  
+    
+    {{ user.username }}
+    {{ user.id }}
+
+    {% if hitman %}
+        {{ hitman }}
+        <form method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit">
+        </form>
+    {% else %}
+        <h1>No tiene assignado Hit</h1>
+    {% endif %}
+
+{% endblock %}

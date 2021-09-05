@@ -4,6 +4,8 @@
 - SQLite3
 more information about requirements open files Pipfile and requirements.txt
 
+Verify permitions of files **accounts/static/accounts/** for see styles.
+
 ## Dependencies
 ```sh
 pip install -r requirements.txt

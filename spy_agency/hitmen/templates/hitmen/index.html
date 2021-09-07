@@ -1,0 +1,30 @@
+{% extends "spy_agency/base.html" %}
+{% load static %}
+
+{% block content %}  
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Hitman</th>
+        <th scope="col">Target</th>        
+        <th scope="col">Status</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for hitman in hitmen %}    
+      <tr>
+        <th scope="row">1</th>
+        <td>{{ hitman.user.username }}</td>
+        <td>{{ hit.target }}</td>
+        <td>{{ hit.status }}</td>
+        <td><a href="{%url 'hitman:show' hitman=hitman.id%}" class="btn btn-primary btn-sm">Show</button></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+
+{% endblock %}

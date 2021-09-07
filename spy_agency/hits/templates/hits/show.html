@@ -1,1 +1,13 @@
-<h1>Show Hits</h1>
+{% extends "spy_agency/base.html" %}
+{% load static %}
+
+{% block content %}  
+
+<p>{{hit.hitman}}</p>
+<p>{{hit.description}}</p>
+<p>{{hit.target}}</p>
+<p>{{hit.status}}</p>
+<p>{{hit.creator}}</p>
+
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "spy_agency/base.html" %}
+{% load static %}
+
+{% block content %}  
+
+<h1>Show</h1>
+
+
+
+<p>{{ hitman.user.get_full_name }}</p>
+<p>{{ hitman.user.email }}</p>
+<p>{{ hitman.user.description }}</p>
+<p>{{ hitman.status }}</p>
+
+
+<form method="POST">
+    Cambiar statu
+    {% csrf_token %}
+    <button type="submit">save</button>
+
+</form>
+
+{% endblock %}

@@ -1,1 +1,12 @@
 <h1>Register</h1>
+
+<form action="" method="POST">
+    <select name="type_user" id="type_user">
+        <option value="boss">Boss</option>
+        <option value="hitman">Hitman</option>
+    </select>
+    {% csrf_token %}
+    {{ form }}
+
+    <button type="submit">Save</button>
+</form>

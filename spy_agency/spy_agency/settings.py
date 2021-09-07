@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
     'hits.apps.HitsConfig',
-    'hitmen.apps.HitmenConfig'
+    'hitmen.apps.HitmenConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [

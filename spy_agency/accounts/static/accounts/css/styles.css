@@ -1,33 +1,80 @@
-:root {
-    --main-color: #f03636;
-    --second-color: #e4e4e0;
-    --color-black: #1b1c19;
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
-.erros-form-field{
-    color: red;
-    font-weight: bold;
-    font-size: .7rem;
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
 }
 
-@font-face {
-    font-family: <un-nombre-de-fuente-remota>;
-    src: <origen> [,<origen>]*;
-    [font-weight: <peso>];
-    [font-style: <estilo>];
+html,
+body {
+    height: 100%;
 }
 
-
-@font-face {
-    font-family: "Avenir Next";
-    src: url(../font/AvenirNextLTPro-Regular.otf);
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
 }
 
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
 
+.form-signin .checkbox {
+    font-weight: 400;
+}
 
-.tittle-cornershop{
-    font-size: 2.2rem;
-    color: var(--main-color);
-    font-weight: bold;
-    font-family: "Avenir Next";    
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
